@@ -214,7 +214,6 @@ body {
   font-weight: normal;
   line-height: 1;
   color: #fff;
-  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.4ex
 }
@@ -300,17 +299,35 @@ body {
 
 /* подвал */
 .footer {
-
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 48px 24px;
 }
 
 .footer__menu {
-
 }
 
 .footer__links {
-
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__link {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+}
 
+.footer__copyright {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0;
 }
