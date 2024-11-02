@@ -6,7 +6,12 @@ body {
   width: 100%;
   background-color: #2a2c2f;
   font-family: 'Inter', 'Arial', 'Helvetica';
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 /* шапка */
@@ -30,9 +35,22 @@ body {
   }
 }
 
+@media screen and (max-width: 490px) {
+  .header {
+    padding: 16px 16px 48px;
+  }
+}
+
 .header__logo{
   width: 176px;
   height: 52px;
+}
+
+@media screen and (max-width: 490px) {
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
 }
 
 .header__lang-links {
@@ -46,10 +64,22 @@ body {
   margin: 0 0 0.5ex;
 }
 
+@media screen and (max-width: 490px) {
+  .header__lang-links {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
 .header__lang-link {
   color: #fff;
   text-decoration: none;
   text-underline-offset: 0.4ex;
+  transition: opacity  0.2s ease;
+}
+
+.header__lang-link:hover {
+  opacity: 0.65;
 }
 
 .header__lang-link_ru {
@@ -291,7 +321,7 @@ body {
 
 @media screen and (max-width: 490px) {
   .places {
-    padding: 64px 16px 66px;
+    padding: 64px 0 66px;
     gap: 50px;
   }
 }
@@ -318,6 +348,14 @@ body {
   }
 }
 
+@media screen and (max-width: 680px) {
+  .place {
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(4, max-content);
+    gap: 32px;
+  }
+}
+
 .place__title {
   font-size: 72px;
   font-weight: 900;
@@ -332,9 +370,23 @@ body {
   }
 }
 
+@media screen and (max-width: 490px) {
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    padding: 0 16px;
+  }
+}
+
 .place__website {
   align-self: end;
   justify-self: start;
+}
+
+@media screen and (max-width: 490px) {
+  .place__website {
+    padding: 0 16px;
+  }
 }
 
 .place__url-heading {
@@ -352,7 +404,12 @@ body {
   line-height: 1;
   color: #fff;
   text-decoration: underline;
-  text-underline-offset: 0.4ex
+  text-underline-offset: 0.4ex;
+  transition: opacity 0.2s ease;
+}
+
+.place__link:hover {
+  opacity: 0.65;
 }
 
 .place__image {
@@ -377,6 +434,12 @@ body {
 @media screen and (max-width: 888px) {
   .place__text {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .place__text {
+    padding: 0 16px;
   }
 }
 
@@ -420,7 +483,6 @@ body {
   position: relative;
   text-decoration: none;
   color: #fff;
-  /* padding: 245px 0; */
   padding: calc((245 / 1184) * 100%) 0;
   transition: opacity 0.2s ease;
 }
@@ -548,6 +610,11 @@ body {
   line-height: 18px;
   text-decoration: none;
   color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+.footer__link:hover {
+  opacity: 0.65;
 }
 
 @media screen and (max-width: 720px) {
