@@ -1,4 +1,4 @@
-<hr>
+<!-- <hr>
 <br>
 
 # Научиться учиться
@@ -37,11 +37,11 @@
 
 🔎 Страница проекта [Просмотр »](https://genevy.github.io/how-to-learn/)
 
-🔗 Ссылка на [репозиторий](https://gitflic.ru/project/genevy/portfolio-praktikum-web/file?file=how-to-learn)  
+🔗 Ссылка на [репозиторий](https://gitflic.ru/project/genevy/portfolio-praktikum-web/file?file=how-to-learn)
 
 <br>
 <hr>
 <br>
  © Developed by [Evgeny Striganov](https://gitflic.ru/user/genevy) jointly [Yandex Praktikum](https://practicum.yandex.ru/referrals/?ref_code=gAAAAABkco-uV4Mg-UB1bl3Yjiv6JRVUANMjgGRWqmPE4h_tL7dTttzfA6wVqRzTF21Tr4yR_oRd0uCrqYhv-tq4R9xRrqFk2g%3D%3D)
 <br>
-<br>
+<br> -->
