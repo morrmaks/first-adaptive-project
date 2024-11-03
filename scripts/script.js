@@ -104,7 +104,3 @@ userTheme.addEventListener('change', () => {
     }
   }
 })
-
-window.onclick = () => {
-  alert('Куда тычешь, быдлон?')
-}
