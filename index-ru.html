@@ -9,12 +9,11 @@
     <title>Путешествие по России</title>
     <link rel="icon" type="image/svg+xml" href="./images/logo/logo-russia-favicon.svg">
     <!-- <link rel="stylesheet" href="./vendor/normalize.css"> -->
-    <link rel="stylesheet" href="./pages/style.css">
+    <link rel="stylesheet" href="./pages/styles.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
 
   <body>
-
     <!-- контейнер со всем содержимым страницы -->
     <div class="page">
 
@@ -31,14 +30,14 @@
           <path d="M171.651 41.0004H176V27.9095H169.884C166.12 27.9095 163.742 29.8186 163.767 32.4777C163.75 33.9692 164.642 35.205 166.205 35.9379L163.631 41.0004H167.947L170.147 36.6709H171.651V41.0004ZM171.651 33.8414H169.986C168.737 33.8414 168.159 33.2277 168.185 32.6482C168.159 32.1027 168.703 31.4209 169.884 31.4209H171.651V33.8414Z"/>
         </svg>
         <!-- кнопка переключения темы -->
-        <button class="button-theme header__button-theme">
+        <button class="button-theme button-theme__header">
           <span class="button-theme__switch"></span>
         </button>
         <!-- переключение языка сайта -->
-        <div class="header__lang-links">
+        <nav class="header__lang-switcher">
           <a class="header__lang-link header__lang-link_active" href="#">Ru</a>
           <a class="header__lang-link" href="./index-en.html">En</a>
-        </div>
+        </nav>
       </header>
 
       <!-- основной контент -->
@@ -47,6 +46,7 @@
         <section class="lead">
             <h1 class="lead__title">Путешествия по России</h1>
             <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+            <!-- картинка с подписью -->
             <figure class="lead__image-map">
               <picture>
                 <source srcset="./images/polka-image-400.jpg" media="(max-width: 400px)">
@@ -68,6 +68,7 @@
             и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места,
             достойные вашего отпуска.
           </p>
+          <!-- список -->
           <ul class="intro__list">
             <li>
               <p class="intro__list-item">Часовых поясов
@@ -101,40 +102,40 @@
         <section class="photo-grid">
           <ul class="photo-grid__list">
             <li>
-              <img src="./images/photo-grid-window-train.png" alt="Окно поезда" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-window-train.png" alt="Окно поезда">
             </li>
             <li>
-              <img src="./images/photo-grid-mountain-range.jpg" alt="Горный хребет" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-mountain-range.jpg" alt="Горный хребет">
             </li>
             <li>
-              <img src="./images/photo-grid-sunrise.jpg" alt="Рассвета" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-sunrise.jpg" alt="Рассвета">
             </li>
             <li>
-              <img src="./images/photo-grid-misty-forest.jpg" alt="Туманный лес" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-misty-forest.jpg" alt="Туманный лес">
             </li>
             <li>
-              <img src="./images/photo-grid-ice.jpg" alt="Лед" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-ice.jpg" alt="Лед">
             </li>
             <li>
-              <img src="./images/photo-grid-barguzin.jpg" alt="Залив Баргузин" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-barguzin.jpg" alt="Залив Баргузин">
             </li>
             <li>
-              <img src="./images/photo-grid-dombai.jpg" alt="Гора Домбай " class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-dombai.jpg" alt="Гора Домбай ">
             </li>
             <li>
-              <img src="./images/photo-grid-road-sign.jpg" alt="Дорожный знак" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-road-sign.jpg" alt="Дорожный знак">
             </li>
             <li>
-              <img src="./images/photo-grid-volcano-one.jpg" alt="Вулкан" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-volcano-one.jpg" alt="Вулкан">
             </li>
             <li>
-              <img src="./images/photo-grid-volcano_two.jpg" alt="Вулкан на Камчатке" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-volcano_two.jpg" alt="Вулкан на Камчатке">
             </li>
             <li>
-              <img src="./images/photo-grid-coast-baikal.jpg" alt="Берег Байкала" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-coast-baikal.jpg" alt="Берег Байкала">
             </li>
             <li>
-              <img src="./images/photo-grid-ergaki.jpg" alt="Ергаки" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Ергаки">
             </li>
           </ul>
         </section>
@@ -176,7 +177,7 @@
                 <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
               </div>
               <picture>
-                <source srcset="./images/place-kolskiy-460.jpg" media="(max-width: 460px)">
+                <source srcset="./images/place-kolskiy-320.jpg" media="(max-width: 460px)">
                 <img src="./images/place-kolskiy-460.jpg" alt="Полуостров Кольский" class="place__image">
               </picture>
               <div class="place__description">
@@ -253,15 +254,13 @@
                 <source srcset="./images/place-kareliya-320.jpg" media="(max-width: 460px)">
                 <img src="./images/place-kareliya-460.jpg" alt="Карелия" class="place__image">
               </picture>
-              <div class="place__description">
-                <p class="place__text">
-                  Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее
-                  Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот
-                  никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу,
-                  видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы.
-                  А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.
-                </p>
-              </div>
+              <p class="place__text">
+                Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее
+                Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот
+                никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу,
+                видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы.
+                А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.
+              </p>
             </article>
         </section>
         <!-- секция cover -->
@@ -301,6 +300,8 @@
         <p class="footer__copyright">© 2024. Максим Морозов</p>
       </footer>
     </div>
+
+  <!-- скрипты -->
   <script src="./scripts/script.js"></script>
   </body>
 </html>

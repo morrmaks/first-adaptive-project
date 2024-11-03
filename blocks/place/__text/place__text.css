@@ -1,0 +1,26 @@
+.place__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.61;
+  margin: 0 0 26px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+@media screen and (max-width: 888px) {
+  .place__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .place__text {
+    line-height: 1.63;
+    padding: 0 16px;
+  }
+}
+
+.place__text:last-child {
+  margin: 0;
+}

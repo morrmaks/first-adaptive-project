@@ -9,12 +9,11 @@
     <title>Traveling Across Russia</title>
     <link rel="icon" type="image/svg+xml" href="./images/logo/logo-russia-favicon.svg">
     <!-- <link rel="stylesheet" href="./vendor/normalize.css"> -->
-    <link rel="stylesheet" href="./pages/style.css">
+    <link rel="stylesheet" href="./pages/styles.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
 
   <body>
-
     <!-- контейнер со всем содержимым страницы -->
     <div class="page">
 
@@ -31,14 +30,14 @@
           <path d="M171.651 41.0004H176V27.9095H169.884C166.12 27.9095 163.742 29.8186 163.767 32.4777C163.75 33.9692 164.642 35.205 166.205 35.9379L163.631 41.0004H167.947L170.147 36.6709H171.651V41.0004ZM171.651 33.8414H169.986C168.737 33.8414 168.159 33.2277 168.185 32.6482C168.159 32.1027 168.703 31.4209 169.884 31.4209H171.651V33.8414Z"/>
         </svg>
         <!-- кнопка переключения темы -->
-        <button class="button-theme header__button-theme">
+        <button class="button-theme button-theme__header">
           <span class="button-theme__switch"></span>
         </button>
         <!-- переключение языка сайта -->
-        <div class="header__lang-links">
+        <nav class="header__lang-switcher">
           <a class="header__lang-link" href="./index-ru.html">Ru</a>
-          <a class="header__lang-link header__lang-link_active" href="№">En</a>
-        </div>
+          <a class="header__lang-link header__lang-link_active" href="#">En</a>
+        </nav>
       </header>
 
       <!-- основной контент -->
@@ -47,6 +46,7 @@
         <section class="lead">
             <h1 class="lead__title">Journeys Across Russia</h1>
             <p class="lead__subtitle">The real country is not in the news releases, but here.</p>
+            <!-- картинка с подписью -->
             <figure class="lead__image-map">
               <picture>
                 <source srcset="./images/polka-image-400.jpg" media="(max-width: 400px)">
@@ -68,6 +68,7 @@
             and I drove 20 thousand kilometers across my native country. We have selected and described some interesting places,
             worthy of your vacation.
           </p>
+          <!-- список -->
           <ul class="intro__list">
             <li>
               <p class="intro__list-item">Time Zones
@@ -101,40 +102,40 @@
         <section class="photo-grid">
           <ul class="photo-grid__list">
             <li>
-              <img src="./images/photo-grid-window-train.png" alt="Train Window" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-window-train.png" alt="Train Window">
             </li>
             <li>
-              <img src="./images/photo-grid-mountain-range.jpg" alt="Mountain Range" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-mountain-range.jpg" alt="Mountain Range">
             </li>
             <li>
-              <img src="./images/photo-grid-sunrise.jpg" alt="Sunrise" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-sunrise.jpg" alt="Sunrise">
             </li>
             <li>
-              <img src="./images/photo-grid-misty-forest.jpg" alt="Misty Forest" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-misty-forest.jpg" alt="Misty Forest">
             </li>
             <li>
-              <img src="./images/photo-grid-ice.jpg" alt="Ice" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-ice.jpg" alt="Ice">
             </li>
             <li>
-              <img src="./images/photo-grid-barguzin.jpg" alt="Barguzin Bay" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-barguzin.jpg" alt="Barguzin Bay">
             </li>
             <li>
-              <img src="./images/photo-grid-dombai.jpg" alt="Mount Dombay" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-dombai.jpg" alt="Mount Dombay">
             </li>
             <li>
-              <img src="./images/photo-grid-road-sign.jpg" alt="Road Sign" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-road-sign.jpg" alt="Road Sign">
             </li>
             <li>
-              <img src="./images/photo-grid-volcano-one.jpg" alt="Volcano" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-volcano-one.jpg" alt="Volcano">
             </li>
             <li>
-              <img src="./images/photo-grid-volcano_two.jpg" alt="Volcano in Kamchatka" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-volcano_two.jpg" alt="Volcano in Kamchatka">
             </li>
             <li>
-              <img src="./images/photo-grid-coast-baikal.jpg" alt="Baikal Shore" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-coast-baikal.jpg" alt="Baikal Shore">
             </li>
             <li>
-              <img src="./images/photo-grid-ergaki.jpg" alt="Mount Ergaki" class="photo-grid__item">
+              <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Mount Ergaki">
             </li>
           </ul>
         </section>
@@ -176,7 +177,7 @@
                 <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
               </div>
               <picture>
-                <source srcset="./images/place-kolskiy-460.jpg" media="(max-width: 460px)">
+                <source srcset="./images/place-kolskiy-320.jpg" media="(max-width: 460px)">
                 <img src="./images/place-kolskiy-460.jpg" alt="Kola Peninsula" class="place__image">
               </picture>
               <div class="place__description">
@@ -253,16 +254,14 @@
                 <source srcset="./images/place-kareliya-320.jpg" media="(max-width: 460px)">
                 <img src="./images/place-kareliya-460.jpg" alt="Karelia" class="place__image">
               </picture>
-              <div class="place__description">
-                <p class="place__text">
-                  Siberia doesn’t end at the Urals; it ends in Karelia, where the Siberian larch that forms the
-                  taiga doesn’t grow west of Vodlozero. Yet here, it soars up to 30 meters tall — the forests of Karelia’s
-                  national parks have never known an axe due to impassable swamps. Some pines here are over half a
-                  millennium old. Touch a living being that saw the sun long before Ivan the Terrible did. In the primeval
-                  forest, there’s no path for hundreds of kilometers. And on the rare trails, trees a couple of meters off
-                  the ground bear bear claw marks, letting everyone know who’s boss here.
-                </p>
-              </div>
+              <p class="place__text">
+                Siberia doesn’t end at the Urals; it ends in Karelia, where the Siberian larch that forms the
+                taiga doesn’t grow west of Vodlozero. Yet here, it soars up to 30 meters tall — the forests of Karelia’s
+                national parks have never known an axe due to impassable swamps. Some pines here are over half a
+                millennium old. Touch a living being that saw the sun long before Ivan the Terrible did. In the primeval
+                forest, there’s no path for hundreds of kilometers. And on the rare trails, trees a couple of meters off
+                the ground bear bear claw marks, letting everyone know who’s boss here.
+              </p>
             </article>
         </section>
         <!-- секция cover -->
@@ -304,6 +303,8 @@
         <p class="footer__copyright">© 2024. Maksim Morozov</p>
       </footer>
     </div>
+
+  <!-- скрипты -->
   <script src="./scripts/script.js"></script>
   </body>
 </html>

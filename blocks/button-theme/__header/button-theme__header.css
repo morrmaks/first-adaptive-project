@@ -1,0 +1,9 @@
+.button-theme__header {
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 490px) {
+  .button-theme__header {
+    margin-bottom: 3px
+  }
+}

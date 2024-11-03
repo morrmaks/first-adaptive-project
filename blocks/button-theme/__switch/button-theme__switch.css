@@ -1,0 +1,21 @@
+.button-theme__switch {
+  content: "";
+  width: calc((22 / 60) * 100%);
+  height: calc((23.5 / 28) * 100%);
+  position: absolute;
+  background-color: var(--color-elements);
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+@media screen and (max-width: 490px) {
+  .button-theme__switch {
+    top: 1.5px;
+  }
+}

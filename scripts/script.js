@@ -15,14 +15,14 @@ if (savedTheme) {
   // если заполнено тогда это
   if (savedTheme === 'dark') {
     // если заполнена темная тема тогда так, если светлая, тогда ничего не меняем
-    page.classList.toggle('page_theme_dark');
+    page.classList.add('page_theme_dark');
   }
 } else {
   // если пустое, тогда это
   // совпадает ли значение темы у юзера с темной
   if (userTheme.matches) {
     // если тема у юзера темная
-    page.classList.toggle('page_theme_dark')
+    page.classList.add('page_theme_dark')
   }
 }
 
@@ -30,8 +30,9 @@ const userDeviceMobile = window.matchMedia('(max-width: 490px)')
 const button = document.querySelector('.button-theme')
 const buttonSwitch = document.querySelector('.button-theme__switch')
 
+// присваиваем константе значение темы
+const themeDark = page.classList.contains('page_theme_dark')
 
-let themeDark = page.classList.contains('page_theme_dark')
 // начальная позиция кнопки в зависимости от темы
 if (themeDark) {
   buttonSwitch.style.transform = 'translateX(0)'
@@ -46,18 +47,18 @@ if (themeDark) {
 // нажатие на кнопку переключения темы
 button.onclick = () => {
 
-  let themeDark = page.classList.contains('page_theme_dark')
+  const themeDark = page.classList.contains('page_theme_dark')
   // проверка истины темной темы
   if (themeDark) {
     // если тема темная
     page.classList.remove('page_theme_dark');
     localStorage.setItem('theme', 'light');
 
-    // если мобайл юзер
+    // если мобильный пользователь
     if (userDeviceMobile.matches) {
       buttonSwitch.style.transform = 'translateX(-26px)'
 
-      // если пк юзер
+      // если пк пользователь
     } else {
       // мув кнопки через элемент в ней
       buttonSwitch.style.transform = 'translateX(-32px)'
@@ -81,4 +82,25 @@ button.onclick = () => {
   }
 }
 
+// поменял ли пользователь тему на девайсе
+userTheme.addEventListener('change', () => {
+  // если сделал темную
+  if (userTheme.matches) {
+    page.classList.add('page_theme_dark')
+    localStorage.setItem('theme', 'dark')
+    buttonSwitch.style.transform = 'translateX(0)'
+  // если сделал светлую
+  } else {
+    page.classList.remove('page_theme_dark')
+    localStorage.setItem('theme', 'light')
 
+    // если мобильный пользователь
+    if (userDeviceMobile.matches) {
+      buttonSwitch.style.transform = 'translateX(-26px)'
+
+      // если пк пользователь
+    } else {
+      buttonSwitch.style.transform = 'translateX(-32px)'
+    }
+  }
+})

@@ -1,0 +1,33 @@
+.button-theme {
+  width: 60px;
+  height: 28px;
+  position: relative;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-elements);
+  border-radius: 25px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+@media screen and (max-width: 490px) {
+  .button-theme {
+    width: calc((6/7) * 60px);
+    height: 24px;
+  }
+}
+
+/* псевдоэлемент кружок внутри кнопки */
+/* .button-theme::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--color-elements);
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+  transition: transform 0.2s ease;
+} */

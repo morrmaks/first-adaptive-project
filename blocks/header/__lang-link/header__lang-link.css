@@ -1,0 +1,12 @@
+.header__lang-link {
+  color: var(--color-text);
+  text-decoration: none;
+  text-underline-offset: 0.4ex;
+  -webkit-transition: opacity  0.2s ease;
+  -o-transition: opacity  0.2s ease;
+  transition: opacity  0.2s ease;
+}
+
+.header__lang-link:hover {
+  opacity: 0.65;
+}

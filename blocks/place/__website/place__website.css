@@ -1,0 +1,13 @@
+.place__website {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+@media screen and (max-width: 490px) {
+  .place__website {
+    padding: 0 16px;
+  }
+}

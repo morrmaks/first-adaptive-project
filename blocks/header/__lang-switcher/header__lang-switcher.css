@@ -1,0 +1,19 @@
+.header__lang-switcher {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 28px;
+  -ms-grid-row-align: end;
+      align-self: end;
+  gap: 18px;
+  margin: 0 0 0.5ex;
+}
+
+@media screen and (max-width: 490px) {
+  .header__lang-switcher {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
