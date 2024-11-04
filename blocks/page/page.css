@@ -5,6 +5,7 @@ body {
 
 .page {
   width: 100%;
+  min-width: 320px;
   background-color: var(--color-background);
   font-family: 'Inter', 'Arial', 'Helvetica';
   -moz-osx-font-smoothing: grayscale;
