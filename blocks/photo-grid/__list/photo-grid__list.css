@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
   .photo-grid__list {
     gap: 14px;
   }

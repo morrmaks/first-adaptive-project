@@ -32,7 +32,7 @@
   -ms-grid-column: 3;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
   .place {
     -ms-grid-columns: calc((440 / 928) * 100%) 32px 1fr;
     grid-template-columns: calc((440 / 928) * 100%) 1fr;

@@ -3,7 +3,7 @@
   display: grid;
   grid-auto-flow: column;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.16;
   -ms-grid-row-align: end;
       align-self: end;

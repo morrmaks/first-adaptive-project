@@ -14,7 +14,7 @@
   padding: 28px 48px calc((56 / 1280) * 100%);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
   .header {
     padding: 28px 48px 48px;
   }
