@@ -1,291 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Places in Russia with Amazing Natural Beauty">
-    <meta name="keywords" content="Travel, Trip, Nature of Russia">
-    <meta name="author" content="Maksim Morozov">
-    <title>Traveling Across Russia</title>
-    <link rel="icon" type="image/svg+xml" href="./images/logo/logo-russia-favicon.svg">
-    <link rel="stylesheet" href="./pages/styles.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-  </head>
 
-  <body>
-    <!-- контейнер со всем содержимым страницы -->
-    <div class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Places in Russia with Amazing Natural Beauty">
+  <meta name="keywords" content="Travel, Trip, Nature of Russia">
+  <meta name="author" content="Maksim Morozov">
+  <title>Traveling Across Russia</title>
+  <link rel="icon" type="image/svg+xml" href="./images/logo/logo-russia-favicon.svg">
+  <link rel="stylesheet" href="./pages/styles.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
 
-      <!-- шапка -->
-      <header class="header">
-        <!-- логотип -->
-        <svg class="header__logo" viewBox="0 0 176 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.76534 23.3826L10.4107 22.0738L14.592 15.7919L15.872 15.2685L17.2374 21.6376L15.4454 21.8993L14.08 19.2819L13.056 23.3826H17.5787L22.272 24.604L24.1494 23.3826L27.3067 26.698L28.672 20.5906L30.8907 22.8591L32.256 20.9396L34.4747 20.3289L37.7174 17.2752L38.2294 15.7919L40.8747 16.2282L41.9841 17.7114L40.0214 21.8993L44.8854 19.3691V18.1476L46.7627 17.7114L48.8107 19.8054L50.8587 17.2752V15.5302L54.1867 13.1745L55.5521 11.1678H57.6854L61.4401 3.40268L64.6828 0L65.8774 1.91946L64.0001 4.36242L64.6828 5.93289L66.4748 6.28188L67.9254 12.7383V18.1476L70.4854 21.7248L71.7654 26.698L67.3281 23.8188L65.3654 15.5302L64.1707 15.7919L64.0001 21.3758L60.7574 26.698L59.8187 34.8121L62.0374 35.3356L62.9761 34.2013L65.1094 36.6443L66.7307 43.9732L66.5601 48.6846H64.5121L63.7441 42.0537L62.2934 44.0604L59.1361 43.3624L56.5761 41.1812L53.6747 42.2282L53.8454 46.9396L51.5414 47.5503L48.1281 50.1678L44.0321 49.6443L42.4107 48.6846L39.8507 49.1208L40.7041 50.1678L38.6561 51.3893L37.0347 50.604L33.9627 52L29.2694 49.6443L27.4774 45.4564L25.9414 45.6309L24.1494 44.1477L24.064 43.0134L18.3467 42.4027L17.408 45.5436L13.824 43.8859L12.032 40.8322H8.19201L7.76534 45.7181L5.54667 46.4161L4.43734 50.8658L3.584 50.0805L0 40.745L4.26667 38.651L3.584 34.5503L2.90134 30.3624L4.77867 27.6577L4.18134 26L6.74134 23.2081L7.76534 23.3826ZM64.5121 33.6779L68.4374 39.6107L69.7174 39.0872L68.0961 36.6443L64.5121 32.8054V33.6779ZM24.4054 21.6376V19.8926L27.392 17.7114L29.952 16.4027H26.9654L24.32 17.9732L22.6987 19.4564V21.6376H24.4054Z"/>
-          <path d="M89.8314 41.0004H94.5546V35.8186H97.171C101.138 35.8186 103.797 33.4749 103.797 29.7164C103.797 26.0004 101.206 23.5459 97.3409 23.5459H89.8314V41.0004ZM94.5546 32.1368V27.33H96.2196C97.8761 27.33 98.87 28.2164 98.87 29.7164C98.87 31.2078 97.8761 32.1368 96.2196 32.1368H94.5546Z"/>
-          <path d="M111.604 41.2391C115.851 41.2391 118.366 38.5118 118.366 34.4891C118.366 30.4664 115.851 27.7391 111.604 27.7391C107.356 27.7391 104.842 30.4664 104.842 34.4891C104.842 38.5118 107.356 41.2391 111.604 41.2391ZM111.638 37.7618C110.381 37.7618 109.633 36.509 109.633 34.455C109.633 32.401 110.381 31.1482 111.638 31.1482C112.827 31.1482 113.575 32.401 113.575 34.455C113.575 36.509 112.827 37.7618 111.638 37.7618Z"/>
-          <path d="M126.555 41.2391C130.42 41.2391 132.79 39.0146 132.841 35.5459H128.492C128.39 36.9181 127.651 37.6595 126.623 37.6595C125.391 37.6595 124.584 36.6027 124.584 34.455C124.584 32.3073 125.391 31.2504 126.623 31.2504C127.659 31.2504 128.365 31.9919 128.492 33.3641H132.841C132.816 29.955 130.395 27.7391 126.555 27.7391C122.308 27.7391 119.793 30.4664 119.793 34.4891C119.793 38.5118 122.308 41.2391 126.555 41.2391Z"/>
-          <path d="M141.062 41.2391C144.928 41.2391 147.298 39.0146 147.349 35.5459H142.999C142.897 36.9181 142.158 37.6595 141.13 37.6595C139.899 37.6595 139.092 36.6027 139.092 34.455C139.092 32.3073 139.899 31.2504 141.13 31.2504C142.167 31.2504 142.872 31.9919 142.999 33.3641H147.349C147.323 29.955 144.902 27.7391 141.062 27.7391C136.815 27.7391 134.3 30.4664 134.3 34.4891C134.3 38.5118 136.815 41.2391 141.062 41.2391Z"/>
-          <path d="M153.701 35.0004V27.9095H149.283V41.0004H153.701L157.337 33.8754V41.0004H161.754V27.9095H157.337L153.701 35.0004Z"/>
-          <path d="M171.651 41.0004H176V27.9095H169.884C166.12 27.9095 163.742 29.8186 163.767 32.4777C163.75 33.9692 164.642 35.205 166.205 35.9379L163.631 41.0004H167.947L170.147 36.6709H171.651V41.0004ZM171.651 33.8414H169.986C168.737 33.8414 168.159 33.2277 168.185 32.6482C168.159 32.1027 168.703 31.4209 169.884 31.4209H171.651V33.8414Z"/>
-        </svg>
-        <!-- кнопка переключения темы -->
-        <button class="button-theme button-theme__header">
-          <span class="button-theme__switch"></span>
-        </button>
-        <!-- переключение языка сайта -->
-        <nav class="header__lang-switcher">
-          <a class="header__lang-link" href="./index.html">Ru</a>
-          <a class="header__lang-link header__lang-link_active" href="#">En</a>
-        </nav>
-      </header>
+<body>
+  <!-- контейнер со всем содержимым страницы -->
+  <div class="page">
 
-      <!-- основной контент -->
-      <main class="content">
-        <!-- секция lead -->
-        <section class="lead">
-            <h1 class="lead__title">Journeys Across Russia</h1>
-            <p class="lead__subtitle">The real country is not in the news releases, but here.</p>
-            <!-- картинка с подписью -->
-            <figure class="lead__image-map">
-              <img class="lead__image" src="./images/polka-image-1024-1280.jpg" alt="Картинка в вагоне поезда">
-              <figcaption class="lead__caption">Your seat — the top bunk.</figcaption>
-            </figure>
-        </section>
+    <!-- шапка -->
+    <header class="header">
+      <!-- логотип -->
+      <svg class="header__logo" viewBox="0 0 176 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.76534 23.3826L10.4107 22.0738L14.592 15.7919L15.872 15.2685L17.2374 21.6376L15.4454 21.8993L14.08 19.2819L13.056 23.3826H17.5787L22.272 24.604L24.1494 23.3826L27.3067 26.698L28.672 20.5906L30.8907 22.8591L32.256 20.9396L34.4747 20.3289L37.7174 17.2752L38.2294 15.7919L40.8747 16.2282L41.9841 17.7114L40.0214 21.8993L44.8854 19.3691V18.1476L46.7627 17.7114L48.8107 19.8054L50.8587 17.2752V15.5302L54.1867 13.1745L55.5521 11.1678H57.6854L61.4401 3.40268L64.6828 0L65.8774 1.91946L64.0001 4.36242L64.6828 5.93289L66.4748 6.28188L67.9254 12.7383V18.1476L70.4854 21.7248L71.7654 26.698L67.3281 23.8188L65.3654 15.5302L64.1707 15.7919L64.0001 21.3758L60.7574 26.698L59.8187 34.8121L62.0374 35.3356L62.9761 34.2013L65.1094 36.6443L66.7307 43.9732L66.5601 48.6846H64.5121L63.7441 42.0537L62.2934 44.0604L59.1361 43.3624L56.5761 41.1812L53.6747 42.2282L53.8454 46.9396L51.5414 47.5503L48.1281 50.1678L44.0321 49.6443L42.4107 48.6846L39.8507 49.1208L40.7041 50.1678L38.6561 51.3893L37.0347 50.604L33.9627 52L29.2694 49.6443L27.4774 45.4564L25.9414 45.6309L24.1494 44.1477L24.064 43.0134L18.3467 42.4027L17.408 45.5436L13.824 43.8859L12.032 40.8322H8.19201L7.76534 45.7181L5.54667 46.4161L4.43734 50.8658L3.584 50.0805L0 40.745L4.26667 38.651L3.584 34.5503L2.90134 30.3624L4.77867 27.6577L4.18134 26L6.74134 23.2081L7.76534 23.3826ZM64.5121 33.6779L68.4374 39.6107L69.7174 39.0872L68.0961 36.6443L64.5121 32.8054V33.6779ZM24.4054 21.6376V19.8926L27.392 17.7114L29.952 16.4027H26.9654L24.32 17.9732L22.6987 19.4564V21.6376H24.4054Z" />
+        <path
+          d="M89.8314 41.0004H94.5546V35.8186H97.171C101.138 35.8186 103.797 33.4749 103.797 29.7164C103.797 26.0004 101.206 23.5459 97.3409 23.5459H89.8314V41.0004ZM94.5546 32.1368V27.33H96.2196C97.8761 27.33 98.87 28.2164 98.87 29.7164C98.87 31.2078 97.8761 32.1368 96.2196 32.1368H94.5546Z" />
+        <path
+          d="M111.604 41.2391C115.851 41.2391 118.366 38.5118 118.366 34.4891C118.366 30.4664 115.851 27.7391 111.604 27.7391C107.356 27.7391 104.842 30.4664 104.842 34.4891C104.842 38.5118 107.356 41.2391 111.604 41.2391ZM111.638 37.7618C110.381 37.7618 109.633 36.509 109.633 34.455C109.633 32.401 110.381 31.1482 111.638 31.1482C112.827 31.1482 113.575 32.401 113.575 34.455C113.575 36.509 112.827 37.7618 111.638 37.7618Z" />
+        <path
+          d="M126.555 41.2391C130.42 41.2391 132.79 39.0146 132.841 35.5459H128.492C128.39 36.9181 127.651 37.6595 126.623 37.6595C125.391 37.6595 124.584 36.6027 124.584 34.455C124.584 32.3073 125.391 31.2504 126.623 31.2504C127.659 31.2504 128.365 31.9919 128.492 33.3641H132.841C132.816 29.955 130.395 27.7391 126.555 27.7391C122.308 27.7391 119.793 30.4664 119.793 34.4891C119.793 38.5118 122.308 41.2391 126.555 41.2391Z" />
+        <path
+          d="M141.062 41.2391C144.928 41.2391 147.298 39.0146 147.349 35.5459H142.999C142.897 36.9181 142.158 37.6595 141.13 37.6595C139.899 37.6595 139.092 36.6027 139.092 34.455C139.092 32.3073 139.899 31.2504 141.13 31.2504C142.167 31.2504 142.872 31.9919 142.999 33.3641H147.349C147.323 29.955 144.902 27.7391 141.062 27.7391C136.815 27.7391 134.3 30.4664 134.3 34.4891C134.3 38.5118 136.815 41.2391 141.062 41.2391Z" />
+        <path
+          d="M153.701 35.0004V27.9095H149.283V41.0004H153.701L157.337 33.8754V41.0004H161.754V27.9095H157.337L153.701 35.0004Z" />
+        <path
+          d="M171.651 41.0004H176V27.9095H169.884C166.12 27.9095 163.742 29.8186 163.767 32.4777C163.75 33.9692 164.642 35.205 166.205 35.9379L163.631 41.0004H167.947L170.147 36.6709H171.651V41.0004ZM171.651 33.8414H169.986C168.737 33.8414 168.159 33.2277 168.185 32.6482C168.159 32.1027 168.703 31.4209 169.884 31.4209H171.651V33.8414Z" />
+      </svg>
+      <!-- кнопка переключения темы -->
+      <button class="button-theme header__button-theme">
+        <span class="button-theme__switch"></span>
+      </button>
+      <!-- переключение языка сайта -->
+      <nav class="header__lang">
+        <a class="header__lang-link" href="./index.html">Ru</a>
+        <a class="header__lang-link header__lang-link_active" href="#">En</a>
+      </nav>
+    </header>
 
-        <!-- секция intro -->
-        <section class="intro">
-          <h2 class="intro__title">What didn't we see there?</h2>
-          <p class="intro__text">
-            According to VTSIOM polls, 95% of Russians dream of going somewhere, but only 36% plan to spend their holidays in
-            their native country. Like, what haven't we seen here at home? In fact, Russia is a whole universe with
-            the gentle sea of the south, the dense forests of the Sayan Mountains and the harsh ice of the Putorana plateau. And you
-            can also see all these beauties without millions in your account, a passport and many hours of flights. Like, for example,
-            Vera Bashmakova is a brave young mother who took three children in her arms and sat them down in her Lada
-            and I drove 20 thousand kilometers across my native country. We have selected and described some interesting places,
-            worthy of your vacation.
-          </p>
-          <!-- список -->
-          <ul class="intro__list">
-            <li>
-              <p class="intro__list-item">Time Zones
-                <span class="intro__list-item_value">11</span>
-              </p>
-            </li>
-            <li>
-              <p class="intro__list-item">UNESCO Natural Heritage Sites
-                <span class="intro__list-item_value">12</span>
-              </p>
-            </li>
-            <li>
-              <p class="intro__list-item">UNESCO Cultural Heritage Sites
-                <span class="intro__list-item_value">16</span>
-              </p>
-            </li>
-            <li>
-              <p class="intro__list-item">Nature Reserves
-                <span class="intro__list-item_value">105</span>
-              </p>
-            </li>
-            <li>
-              <p class="intro__list-item">Airports
-                <span class="intro__list-item_value">241</span>
-              </p>
-            </li>
-          </ul>
-        </section>
+    <!-- основной контент -->
+    <main class="content">
+      <!-- секция lead -->
+      <section class="lead content__lead">
+        <h1 class="lead__title">Journeys Across Russia</h1>
+        <p class="lead__subtitle">The real country is not in the news releases, but here.</p>
+        <!-- картинка с подписью -->
+        <figure class="lead__figure">
+          <img class="lead__image" src="./images/polka-image-1024-1280.jpg" alt="Картинка в вагоне поезда">
+          <figcaption class="lead__caption">Your seat — the top bunk.</figcaption>
+        </figure>
+      </section>
 
-        <!-- галерея фото -->
-        <section class="photo-grid">
-          <ul class="photo-grid__list">
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-window-train.png" alt="Train Window">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-mountain-range.jpg" alt="Mountain Range">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-sunrise.jpg" alt="Sunrise">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-misty-forest.jpg" alt="Misty Forest">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-ice.jpg" alt="Ice">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-barguzin.jpg" alt="Barguzin Bay">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-dombai.jpg" alt="Mount Dombay">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-road-sign.jpg" alt="Road Sign">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-volcano-one.jpg" alt="Volcano">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-volcano_two.jpg" alt="Volcano in Kamchatka">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-coast-baikal.jpg" alt="Baikal Shore">
-            </li>
-            <li>
-              <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Mount Ergaki">
-            </li>
-          </ul>
-        </section>
-
-        <!-- секция places -->
-        <section class="places">
-
-            <!-- Куршская коса -->
-            <article class="place">
-              <h2 class="place__title">Curonian Spit</h2>
-              <div class="place__website">
-                <h3 class="place__url-heading">URL</h3>
-                <a href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
-              </div>
-              <img src="./images/place-kosa-460.jpg" alt="Curonian Spit" class="place__image">
-              <div class="place__description">
-                <p class="place__text">
-                  Here, amidst forests and sandy dunes, you can see two horizons of water — the calm Curonian Lagoon
-                  on one side and the Baltic Sea, rippling with waves, on the other. A unique natural area at the edge
-                  of Russia’s enclave.
-                </p>
-                <p class="place__text">
-                  The Kaliningrad region doesn’t end here. Nearby for the traveler and explorer lies Russia’s
-                  westernmost point, the Baltic Spit, along with the German heritage scattered across small seaside
-                  towns. The atmosphere in these places is free from hustle, immersing you in the tranquility of nature
-                  and the scent of a cool, steel-blue sea.
-                </p>
-              </div>
-            </article>
-
-            <!-- Полуостров Кольский -->
-            <article class="place">
-              <h2 class="place__title">Kola Peninsula</h2>
-              <div class="place__website">
-                <h3 class="place__url-heading">URL</h3>
-                <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
-              </div>
-              <img src="./images/place-kolskiy-460.jpg" alt="Kola Peninsula" class="place__image">
-              <div class="place__description">
-                <p class="place__text">
-                  Almost the entire peninsula is located beyond the Arctic Circle. From the Sami tundra, stretching
-                  southward is the taiga, and to the north, the Arctic Ocean disguising itself as the Barents Sea.
-                </p>
-                <p class="place__text">
-                  Perhaps you’ve watched Zvyagintsev’s films or heard about the Arctic festival in Teriberka. Perhaps
-                  the word “Khibiny” hasn’t been buried in the snow of old geography lessons. Maybe you never showed
-                  interest in the superdeep borehole piercing Earth’s crust, and apatite minerals might have long
-                  evoked apathy in you. But your dream to see the northern lights begins with a ticket to Murmansk.
-                </p>
-              </div>
-            </article>
-
-            <!-- Алтай -->
-            <article class="place">
-              <h2 class="place__title">Altai</h2>
-              <div class="place__website">
-                <h3 class="place__url-heading">URL</h3>
-                <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" class="place__link">YouTube</a>
-              </div>
-              <img src="./images/place-altai-460.jpg" alt="Altai" class="place__image">
-              <div class="place__description">
-                <p class="place__text">
-                  Altai is one of the most beautiful places in Russia, primarily due to its mountains: if you drive
-                  along the ridge, you’ll see slopes dotted with pines, mountain rivers, and lakes. And if you roll
-                  down your car windows, you’ll encounter an invisible wonder of these lands — the mountain air.
-                </p>
-                <p class="place__text">
-                  Altai’s climate is mild, so it’s best to visit in summer. This way, you’ll witness the full
-                  diversity of local flora and fauna. Moose roam Altai’s forests, eagles soar over the ridges,
-                  and roe deer graze on the plains. And the famous Pallas’s cats also inhabit the Altai region.
-                </p>
-              </div>
-            </article>
-
-            <!-- Зимний Байкал -->
-            <article class="place">
-              <h2 class="place__title">Winter Baikal</h2>
-              <div class="place__website">
-                <h3 class="place__url-heading">URL</h3>
-                <a href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
-              </div>
-              <img src="./images/place-baikal-460.jpg" alt="Winter Baikal" class="place__image">
-              <div class="place__description">
-                <p class="place__text">
-                  Baikal is widely known as the largest lake in the world. Many also know it’s the largest
-                  source of fresh water and one of Russia’s most beautiful places.
-                </p>
-                <p class="place__text">
-                  That’s all true, of course. But Baikal is also an ideal place for skijoring competitions — a
-                  sport where a skier ties themselves to a motorcycle, and together they strive to reach maximum
-                  speed on ice. In March 2019, a world record was set at the “Baikal Mile” festival — 197.011 km/h.
-                </p>
-              </div>
-            </article>
-
-            <!-- Карелия -->
-            <article class="place">
-              <h2 class="place__title">Karelia</h2>
-              <div class="place__website">
-                <h3 class="place__url-heading">URL</h3>
-                <a href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>
-              </div>
-              <img src="./images/place-kareliya-460.jpg" alt="Karelia" class="place__image">
-              <p class="place__text">
-                Siberia doesn’t end at the Urals; it ends in Karelia, where the Siberian larch that forms the
-                taiga doesn’t grow west of Vodlozero. Yet here, it soars up to 30 meters tall — the forests of Karelia’s
-                national parks have never known an axe due to impassable swamps. Some pines here are over half a
-                millennium old. Touch a living being that saw the sun long before Ivan the Terrible did. In the primeval
-                forest, there’s no path for hundreds of kilometers. And on the rare trails, trees a couple of meters off
-                the ground bear bear claw marks, letting everyone know who’s boss here.
-              </p>
-            </article>
-        </section>
-        <!-- секция cover -->
-        <section class="cover">
-          <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__overlay">
-            <h2 class="cover__title">To Baikal “by Dogs”</h2>
-            <p class="cover__subtitle">
-              Inspired by a school lesson on the Trans-Siberian Railway — a journey from the capital to Baikal by local trains.
+      <!-- секция intro -->
+      <section class="intro content__intro">
+        <h2 class="intro__title">What didn't we see there?</h2>
+        <p class="intro__text">
+          According to surveys by the RPORC, 95% of Russians dream of traveling somewhere, but only 36% plan
+          to spend their vacation in their home country. They say, “What haven’t we already seen here at home?”
+          In reality, Russia is an entire universe with the gentle seas of the south, the dense forests of the
+          Sayans, and the harsh ice of the Putorana Plateau. And you can see all these wonders without millions
+          in the bank, a foreign passport, or long flights. Just like Vera Bashmakova—a brave young mother who
+          gathered up her three children, seated them in her “Lada,” and drove 20,000 kilometers across her
+          homeland. We have selected and described some interesting places worthy of your vacation.
+        </p>
+        <!-- список -->
+        <ul class="intro__list">
+          <li>
+            <p class="intro__item">Time Zones
+              <span class="intro__amount">11</span>
             </p>
-          </a>
-        </section>
-      </main>
+          </li>
+          <li>
+            <p class="intro__item">UNESCO Natural Heritage Sites
+              <span class="intro__amount">12</span>
+            </p>
+          </li>
+          <li>
+            <p class="intro__item">UNESCO Cultural Heritage Sites
+              <span class="intro__amount">16</span>
+            </p>
+          </li>
+          <li>
+            <p class="intro__item">Nature Reserves
+              <span class="intro__amount">105</span>
+            </p>
+          </li>
+          <li>
+            <p class="intro__item">Airports
+              <span class="intro__amount">241</span>
+            </p>
+          </li>
+        </ul>
+      </section>
 
-      <!-- подвал -->
-      <footer class="footer">
+      <!-- галерея фото -->
+      <section class="photo-grid content__photo-grid" aria-label="Галерея фото с разнообразием природы в России">
+        <ul class="photo-grid__list">
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-window-train.png" alt="Train Window">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-mountain-range.jpg" alt="Mountain Range">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-sunrise.jpg" alt="Sunrise">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-misty-forest.jpg" alt="Misty Forest">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-ice.jpg" alt="Ice">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-barguzin.jpg" alt="Barguzin Bay">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-dombai.jpg" alt="Mount Dombay">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-road-sign.jpg" alt="Road Sign">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-volcano-one.jpg" alt="Volcano">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-volcano_two.jpg" alt="Volcano in Kamchatka">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-coast-baikal.jpg" alt="Baikal Shore">
+          </li>
+          <li>
+            <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Mount Ergaki">
+          </li>
+        </ul>
+      </section>
 
-        <!-- Контейнер Меню -->
-        <nav>
-          <ul class="footer__links">
-            <li>
-              <a class="footer__link" href="https://yandex.ru/maps">Maps</a>
-            </li>
-            <li>
-              <a class="footer__link" href="https://yandex.ru/pogoda">Weather</a>
-            </li>
-            <li>
-              <a class="footer__link" href="https://rasp.yandex.ru">Timetable</a>
-            </li>
-            <li>
-              <a class="footer__link" href="https://calendar.yandex.ru">Calendar</a>
-            </li>
-            <li>
-              <a class="footer__link" href="https://travel.yandex.ru">Travel</a>
-            </li>
-          </ul>
-        </nav>
+      <!-- секция places -->
+      <section class="places content__places" aria-label="Красивейшие места в природе России">
 
-        <!-- Подпись автора -->
-        <p class="footer__copyright">© 2024. Maksim Morozov</p>
-      </footer>
-    </div>
+        <!-- Куршская коса -->
+        <article class="place">
+          <h2 class="place__title">Curonian Spit</h2>
+          <div class="place__website">
+            <h3 class="place__url-heading">URL</h3>
+            <a class="place__link" href="http://park-kosa.ru" target="_blank">park-kosa.ru</a>
+          </div>
+          <img src="./images/place-kosa-460.jpg" alt="Curonian Spit" class="place__image">
+          <div class="place__description">
+            <p class="place__text">
+              Here, amidst forests and sandy dunes, you can see two horizons of water — the calm Curonian Lagoon
+              on one side and the Baltic Sea, rippling with waves, on the other. A unique natural area at the edge
+              of Russia’s enclave.
+            </p>
+            <p class="place__text">
+              The Kaliningrad region doesn’t end here. Nearby for the traveler and explorer lies Russia’s
+              westernmost point, the Baltic Spit, along with the German heritage scattered across small seaside
+              towns. The atmosphere in these places is free from hustle, immersing you in the tranquility of nature
+              and the scent of a cool, steel-blue sea.
+            </p>
+          </div>
+        </article>
+
+        <!-- Полуостров Кольский -->
+        <article class="place">
+          <h2 class="place__title">Kola Peninsula</h2>
+          <div class="place__website">
+            <h3 class="place__url-heading">URL</h3>
+            <a class="place__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank">National
+              Geographic</a>
+          </div>
+          <img src="./images/place-kolskiy-460.jpg" alt="Kola Peninsula" class="place__image">
+          <div class="place__description">
+            <p class="place__text">
+              Almost the entire peninsula is located beyond the Arctic Circle. From the Sami tundra, stretching
+              southward is the taiga, and to the north, the Arctic Ocean disguising itself as the Barents Sea.
+            </p>
+            <p class="place__text">
+              Perhaps you’ve watched Zvyagintsev’s films or heard about the Arctic festival in Teriberka. Perhaps
+              the word “Khibiny” hasn’t been buried in the snow of old geography lessons. Maybe you never showed
+              interest in the superdeep borehole piercing Earth’s crust, and apatite minerals might have long
+              evoked apathy in you. But your dream to see the northern lights begins with a ticket to Murmansk.
+            </p>
+          </div>
+        </article>
+
+        <!-- Алтай -->
+        <article class="place">
+          <h2 class="place__title">Altai</h2>
+          <div class="place__website">
+            <h3 class="place__url-heading">URL</h3>
+            <a class="place__link" href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" target="_blank">YouTube</a>
+          </div>
+          <img src="./images/place-altai-460.jpg" alt="Altai" class="place__image">
+          <div class="place__description">
+            <p class="place__text">
+              Altai is one of the most beautiful places in Russia, primarily due to its mountains: if you drive
+              along the ridge, you’ll see slopes dotted with pines, mountain rivers, and lakes. And if you roll
+              down your car windows, you’ll encounter an invisible wonder of these lands — the mountain air.
+            </p>
+            <p class="place__text">
+              Altai’s climate is mild, so it’s best to visit in summer. This way, you’ll witness the full
+              diversity of local flora and fauna. Moose roam Altai’s forests, eagles soar over the ridges,
+              and roe deer graze on the plains. And the famous Pallas’s cats also inhabit the Altai region.
+            </p>
+          </div>
+        </article>
+
+        <!-- Зимний Байкал -->
+        <article class="place">
+          <h2 class="place__title">Winter Baikal</h2>
+          <div class="place__website">
+            <h3 class="place__url-heading">URL</h3>
+            <a class="place__link" href="https://vk.com/baikalmile" target="_blank">https://vk.com/baikalmile</a>
+          </div>
+          <img src="./images/place-baikal-460.jpg" alt="Winter Baikal" class="place__image">
+          <div class="place__description">
+            <p class="place__text">
+              Baikal is widely known as the largest lake in the world. Many also know it’s the largest
+              source of fresh water and one of Russia’s most beautiful places.
+            </p>
+            <p class="place__text">
+              That’s all true, of course. But Baikal is also an ideal place for skijoring competitions — a
+              sport where a skier ties themselves to a motorcycle, and together they strive to reach maximum
+              speed on ice. In March 2019, a world record was set at the “Baikal Mile” festival — 197.011 km/h.
+            </p>
+          </div>
+        </article>
+
+        <!-- Карелия -->
+        <article class="place">
+          <h2 class="place__title">Karelia</h2>
+          <div class="place__website">
+            <h3 class="place__url-heading">URL</h3>
+            <a class="place__link" href="http://vodlozero.ru" target="_blank">http://vodlozero.ru/</a>
+          </div>
+          <img src="./images/place-kareliya-460.jpg" alt="Karelia" class="place__image">
+          <p class="place__text">
+            Siberia doesn’t end at the Urals; it ends in Karelia, where the Siberian larch that forms the
+            taiga doesn’t grow west of Vodlozero. Yet here, it soars up to 30 meters tall — the forests of Karelia’s
+            national parks have never known an axe due to impassable swamps. Some pines here are over half a
+            millennium old. Touch a living being that saw the sun long before Ivan the Terrible did. In the primeval
+            forest, there’s no path for hundreds of kilometers. And on the rare trails, trees a couple of meters off
+            the ground bear bear claw marks, letting everyone know who’s boss here.
+          </p>
+        </article>
+      </section>
+      <!-- секция cover -->
+      <section class="cover">
+        <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
+          <h2 class="cover__title">To Baikal “by Dogs”</h2>
+          <p class="cover__subtitle">
+            Inspired by a school lesson on the Trans-Siberian Railway — a journey from the capital to Baikal by local
+            trains.
+          </p>
+        </a>
+      </section>
+    </main>
+
+    <!-- подвал -->
+    <footer class="footer">
+
+      <!-- Контейнер Меню -->
+      <nav>
+        <ul class="footer__links">
+          <li>
+            <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Maps</a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Weather</a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Timetable</a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Calendar</a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://travel.yandex.ru" target="_blank">Travel</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Подпись автора -->
+      <p class="footer__copyright">© 2024. Maksim Morozov</p>
+    </footer>
+  </div>
 
   <!-- скрипты -->
   <script src="./scripts/script.js"></script>
-  </body>
+</body>
+
 </html>

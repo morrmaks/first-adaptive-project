@@ -1,5 +1,6 @@
 .header {
   max-width: 100%;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: justify;

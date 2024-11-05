@@ -1,5 +1,6 @@
 .place {
   max-width: 100%;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: calc((460 / 984) * 100%) 40px 1fr;

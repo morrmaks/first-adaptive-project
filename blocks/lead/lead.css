@@ -1,5 +1,6 @@
 .lead {
   max-width: 984px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +13,6 @@
           align-items: center;
   text-align: center;
   color: var(--color-text);
-  margin: 0 auto;
   padding: 0 48px;
 }
 

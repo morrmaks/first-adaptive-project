@@ -74,7 +74,7 @@ body {
   }
 }
 
-.button-theme__header {
+.header__button-theme {
   margin-bottom: 7px;
 }
 
@@ -140,7 +140,7 @@ body {
   }
 }
 
-.header__lang-switcher {
+.header__lang {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -154,7 +154,7 @@ body {
 }
 
 @media screen and (max-width: 490px) {
-  .header__lang-switcher {
+  .header__lang {
     font-size: 18px;
     line-height: 20px;
   }
@@ -263,7 +263,7 @@ body {
   }
 }
 
-.lead__image-map {
+.lead__figure {
   max-width: 984px;
   margin: 0;
 }
@@ -354,14 +354,14 @@ body {
   list-style: none;
 }
 
-.intro__list-item {
+.intro__item {
   font-size: 12px;
   font-weight: bold;
   line-height: 18px;
   margin: 0;
 }
 
-.intro__list-item_value {
+.intro__amount {
   font-weight: normal;
 }
 

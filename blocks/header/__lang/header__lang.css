@@ -1,10 +1,10 @@
-.header__lang-switcher {
+.header__lang {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   font-size: 24px;
   font-weight: normal;
-  line-height: 28px;
+  line-height: 1.16;
   -ms-grid-row-align: end;
       align-self: end;
   gap: 18px;
@@ -12,8 +12,8 @@
 }
 
 @media screen and (max-width: 490px) {
-  .header__lang-switcher {
+  .header__lang {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 1.11;
   }
 }

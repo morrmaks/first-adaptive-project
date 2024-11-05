@@ -83,24 +83,47 @@ button.onclick = () => {
 }
 
 // поменял ли пользователь тему на девайсе
+// userTheme.addEventListener('change', () => {
+//   // если сделал темную
+//   if (userTheme.matches) {
+//     page.classList.add('page_theme_dark')
+//     localStorage.setItem('theme', 'dark')
+//     buttonSwitch.style.transform = 'translateX(0)'
+//   // если сделал светлую
+//   } else {
+//     page.classList.remove('page_theme_dark')
+//     localStorage.setItem('theme', 'light')
+
+//     // если мобильный пользователь
+//     if (userDeviceMobile.matches) {
+//       buttonSwitch.style.transform = 'translateX(-26px)'
+
+//       // если пк пользователь
+//     } else {
+//       buttonSwitch.style.transform = 'translateX(-32px)'
+//     }
+//   }
+// })
+
+
+// смена темы от изменения темы на устройстве пользователя
+// сделано с использованием ТЕРНАРНОГО ОПЕРАТОРА
 userTheme.addEventListener('change', () => {
-  // если сделал темную
-  if (userTheme.matches) {
-    page.classList.add('page_theme_dark')
-    localStorage.setItem('theme', 'dark')
-    buttonSwitch.style.transform = 'translateX(0)'
-  // если сделал светлую
-  } else {
-    page.classList.remove('page_theme_dark')
-    localStorage.setItem('theme', 'light')
 
-    // если мобильный пользователь
-    if (userDeviceMobile.matches) {
-      buttonSwitch.style.transform = 'translateX(-26px)'
+  page.classList.toggle('page_theme_dark', userTheme.matches);
+  localStorage.setItem('theme', userTheme.matches ? 'dark' : 'light' )
+  buttonSwitch.style.transform = userTheme.matches
+    ? 'translateX(0)'
+    : userDeviceMobile.matches
+      ? 'translateX(-26px)'
+      : 'translateX(-32px)';
+})
 
-      // если пк пользователь
-    } else {
-      buttonSwitch.style.transform = 'translateX(-32px)'
-    }
-  }
+// изменение положения кнопки от изменения ширины экрана пользователя
+userDeviceMobile.addEventListener('change', () => {
+  buttonSwitch.style.transform = userTheme.matches
+    ? 'translateX(0)'
+    : userDeviceMobile.matches
+      ? 'translateX(-26px)'
+      : 'translate(-32px)'
 })
