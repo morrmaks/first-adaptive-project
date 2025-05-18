@@ -12,22 +12,13 @@
       justify-self: end;
 }
 
+.button-theme:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 490px) {
   .button-theme {
     width: calc((6/7) * 60px);
     height: 24px;
   }
 }
-
-/* псевдоэлемент кружок внутри кнопки */
-/* .button-theme::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-color: var(--color-elements);
-  border-radius: 50%;
-  top: 2px;
-  right: 2px;
-  transition: transform 0.2s ease;
-} */
